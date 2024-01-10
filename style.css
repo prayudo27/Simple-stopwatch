@@ -1,60 +1,72 @@
 body {
-    background-color: #f0f0f0;
-    font-family: "Poppins", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-    overflow: hidden;
-    align-items: center;
+  background-color: #2c72e2;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  align-items: center;
 }
 
 #timer {
-    font-size: 7rem;
-    font-weight: 700;
-    text-shadow: 2px 2px #2c2929;
-    color: #f92672;
-    width: 600px;
-    text-align: center;
-    margin: 40px auto;
+  font-size: 7rem;
+  font-weight: 700;
+  text-shadow: 2px 2px #2c2929;
+  color: #ece6e8;
+  width: 600px;
+  text-align: center;
+  margin: 40px auto;
 }
 
 #buttons {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 button {
-    background-color: #f92672;
-    color: white;
-    border: none;
-    font-size: 2rem;
-    font-weight: bold;
-    padding:  1.5rem 4rem;
-    margin: 1rem;
-    border-radius: 30px;
-    cursor: pointer;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-    transition: all 0.2s;
+  background: linear-gradient(315deg, #2867cb, #2f7af2);
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1.5rem 4rem;
+  margin: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: -9px -9px 18px #2868ce, 9px 9px 18px #307cf6;
+  transition: all 0.2s;
+  color: #f8f7f4;
 }
 
 button:hover {
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 button[disabled] {
-    opacity: 0.5;
-    cursor: default;
+  opacity: 0.5;
+  cursor: default;
+}
+
+.footer {
+  font-size: 0.8rem;
+  margin-top: 3rem;
+  font-weight: 600;
+  text-shadow: 1px 1px #161616c0;
+  color: #f8f7f4;
+}
+
+.footer span {
+  color: rgb(20, 20, 20);
 }
 
 @media (max-width: 800px) {
-    #timer {
-        font-size: 4rem;
-        width: 350px;
-    }
+  #timer {
+    font-size: 4rem;
+    width: 350px;
+  }
 
-    button {
-        font-size: 1.5rem;
-        padding: 1rem 2rem;
-    }
+  button {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+  }
 }
