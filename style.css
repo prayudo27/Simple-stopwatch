@@ -4,7 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 80vh;
   overflow: hidden;
   align-items: center;
 }
@@ -59,14 +59,56 @@ button[disabled] {
   color: rgb(20, 20, 20);
 }
 
-@media (max-width: 800px) {
+
+@media screen and (max-width: 576px) {
   #timer {
-    font-size: 4rem;
-    width: 350px;
+    font-size: 3rem;
+    width: 300px;
   }
 
   button {
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
+    font-size: 1rem;
+    padding: 1rem 1.25rem;
+    font-weight: 600;
   }
+
+  #buttons {
+    width: 20px;
+  }
+
+  .footer {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #timer {
+    font-size: 4rem;
+    width: 300px;
+  }
+
+  button {
+    font-size: 2rem;
+    padding: 2rem 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #timer {
+    font-size: 8rem;
+    width: 500px;
+  }
+
+  button {
+    font-size: 2rem;
+    padding: 2rem 4rem;
+  }
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1400px) {}
+
+@media (max-width: 800px) {
+
 }
